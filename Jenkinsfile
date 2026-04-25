@@ -50,9 +50,5 @@ pipeline {
             }
         }
     }
-        stage('Discard') {
-            steps {
-                sh "pwd;cd terraform/ ; terraform destroy -input=false tfplan"
-            }
-        }     
+        
   }
